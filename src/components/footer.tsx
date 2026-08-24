@@ -6,7 +6,7 @@ import packageinfo from "@/../package.json";
 import Image from "next/image";
 import { FaDiscord } from "react-icons/fa";
 
-const GITHUB_URL = "https://github.com/breadddevv/feedbase";
+const GITHUB_URL = "https://github.com/Paddlewheel-Inc/usercue";
 
 const footerLinks = {
   product: [
@@ -16,14 +16,14 @@ const footerLinks = {
     { name: "Self-hosting", href: "/docs/self-hosting", disabled: true },
   ],
   developers: [
-    { name: "Documentation", href: "https://docs.feedbase.app", external: true, disabled: true },
+    { name: "Documentation", href: "https://docs.usercue.app", external: true, disabled: true },
     { name: "GitHub", href: GITHUB_URL, external: true },
     { name: "Contributing", href: `${GITHUB_URL}/blob/main/CONTRIBUTING.md`, external: true },
     { name: "Releases", href: `${GITHUB_URL}/releases`, external: true },
   ],
   community: [
     { name: "Discord", href: "/discord", disabled: true },
-    { name: "X / Twitter", href: "https://x.com/feedbase", external: true, disabled: true },
+    { name: "X / Twitter", href: "https://x.com/usercue", external: true, disabled: true },
     { name: "Blog", href: "/blog", disabled: true },
     { name: "Support", href: "/support", disabled: true },
   ],
@@ -70,8 +70,8 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <Image width={32} height={32} src="/logo.png" alt="Feedbase" />
-              <span className="text-base font-semibold text-foreground">Feedbase</span>
+              <Image width={32} height={32} src="/logo.png" alt="UserCue" />
+              <span className="text-base font-semibold text-foreground">UserCue</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               Open-source, self-hosted feedback boards for your users and team.
@@ -130,7 +130,7 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
           <div className="flex items-center gap-4">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Feedbase. MIT licensed.
+              &copy; {new Date().getFullYear()} Paddlewheel Inc. UserCue is MIT licensed.
             </p>
             <span className="rounded-md border border-border bg-muted px-2 py-0.5 font-mono text-xs text-muted-foreground">
               {`v${packageinfo.version}`}
@@ -140,7 +140,7 @@ export function Footer() {
             <Link href="/discord" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Discord">
               <FaDiscord className="h-5 w-5" />
             </Link>
-            <Link href="https://x.com/feedbase" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="X / Twitter">
+            <Link href="https://x.com/usercue" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="X / Twitter">
               <TbBrandX className="h-4 w-4" />
             </Link>
             <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">

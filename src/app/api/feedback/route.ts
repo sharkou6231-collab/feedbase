@@ -75,7 +75,7 @@ export async function POST(request: Request) {
           ],
           avatar_url:
             "https://cdn.breaddevv.cc/branding/feedbase/logo-pattern.png",
-          username: "Feedbase",
+          username: "UserCue",
         },
       );
 

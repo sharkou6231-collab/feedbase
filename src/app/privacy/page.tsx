@@ -41,21 +41,21 @@ const sections: Section[] = [
   {
     title: "Overview",
     blocks: [
-      { type: "text", content: "Feedbase is open-source, self-hosted feedback management software. Because you run it on your own infrastructure, you are the data controller — we have no access to anything stored on your instance." },
-      { type: "text", content: "This policy describes what data Feedbase processes locally, and how it is handled." },
+      { type: "text", content: "UserCue is open-source, self-hosted feedback management software. Because you run it on your own infrastructure, you are the data controller — we have no access to anything stored on your instance." },
+      { type: "text", content: "This policy describes what data UserCue processes locally, and how it is handled." },
     ],
   },
   {
     title: "Data you control",
     blocks: [
-      { type: "text", content: "All data on your Feedbase instance — user accounts, feedback posts, votes, comments, and attachments — lives in your own database on your own servers." },
-      { type: "note", content: "Feedbase maintainers have zero access to this data. You decide how it is stored, backed up, and deleted." },
+      { type: "text", content: "All data on your UserCue instance — user accounts, feedback posts, votes, comments, and attachments — lives in your own database on your own servers." },
+      { type: "note", content: "UserCue maintainers have zero access to this data. You decide how it is stored, backed up, and deleted." },
     ],
   },
   {
-    title: "Data Feedbase may process",
+    title: "Data UserCue may process",
     blocks: [
-      { type: "text", content: "Feedbase processes the following data locally on your instance:" },
+      { type: "text", content: "UserCue processes the following data locally on your instance:" },
       {
         type: "list",
         items: [
@@ -65,42 +65,42 @@ const sections: Section[] = [
           "Integration config — if you configure Discord, Slack, GitHub, or email integrations, tokens and settings are stored in your database.",
         ],
       },
-      { type: "tip", content: "None of this data is transmitted to Feedbase maintainers or any third party by default." },
+      { type: "tip", content: "None of this data is transmitted to UserCue maintainers or any third party by default." },
     ],
   },
   {
     title: "Telemetry & update checks",
     blocks: [
-      { type: "text", content: "Feedbase may make outbound requests to the GitHub public API to check for software updates. These requests include only your current version number — no personally identifiable information is sent." },
+      { type: "text", content: "UserCue may make outbound requests to the GitHub public API to check for software updates. These requests include only your current version number — no personally identifiable information is sent." },
       { type: "note", content: "All telemetry is opt-in only. No usage analytics, crash reports, or behavioural data is collected unless you explicitly enable it in your instance config." },
     ],
   },
   {
     title: "Third-party integrations",
     blocks: [
-      { type: "text", content: "Feedbase supports optional integrations with Discord, Slack, GitHub, and email providers. When configured, data may flow to those services under their own privacy policies." },
+      { type: "text", content: "UserCue supports optional integrations with Discord, Slack, GitHub, and email providers. When configured, data may flow to those services under their own privacy policies." },
       { type: "warn", content: "You are responsible for ensuring your use of third-party integrations complies with applicable laws and those services' terms." },
     ],
   },
   {
     title: "Cookies & sessions",
     blocks: [
-      { type: "text", content: "Feedbase uses session cookies strictly to keep users authenticated. These are necessary for the application to function and are not used for tracking or advertising." },
-      { type: "tip", content: "No third-party analytics or advertising cookies are set by Feedbase." },
+      { type: "text", content: "UserCue uses session cookies strictly to keep users authenticated. These are necessary for the application to function and are not used for tracking or advertising." },
+      { type: "tip", content: "No third-party analytics or advertising cookies are set by UserCue." },
     ],
   },
   {
     title: "Your rights (GDPR & others)",
     blocks: [
       { type: "text", content: "As the instance operator, you have full control over all user data — you can view, export, or delete it directly from your database at any time." },
-      { type: "text", content: "If you are a user of someone else's Feedbase instance, please contact that operator regarding your data rights." },
+      { type: "text", content: "If you are a user of someone else's UserCue instance, please contact that operator regarding your data rights." },
       { type: "note", content: "For users in the European Union, rights including access, rectification, erasure, and portability apply in accordance with GDPR." },
     ],
   },
   {
     title: "Data retention & deletion",
     blocks: [
-      { type: "text", content: "Data is retained for as long as your instance is running and you choose to keep it. There are no external retention schedules imposed by Feedbase." },
+      { type: "text", content: "Data is retained for as long as your instance is running and you choose to keep it. There are no external retention schedules imposed by UserCue." },
       { type: "tip", content: "You may delete any user data at any time via the admin panel or directly from your database." },
     ],
   },
@@ -109,20 +109,20 @@ const sections: Section[] = [
     blocks: [
       { type: "text", content: "We take reasonable technical measures to protect the software from known vulnerabilities. Security releases are published on the GitHub repository." },
       { type: "warn", content: "You are responsible for keeping your instance up to date. Running outdated versions may expose your instance to known vulnerabilities." },
-      { type: "danger", content: "Never expose your database, environment variables, or admin credentials publicly. Feedbase maintainers will never ask for these." },
+      { type: "danger", content: "Never expose your database, environment variables, or admin credentials publicly. UserCue maintainers will never ask for these." },
     ],
   },
   {
     title: "Changes to this policy",
     blocks: [
-      { type: "text", content: "We may update this policy from time to time. Changes will be reflected in the Feedbase repository and noted in the changelog." },
+      { type: "text", content: "We may update this policy from time to time. Changes will be reflected in the UserCue repository and noted in the changelog." },
       { type: "note", content: "Continued use of the software after changes constitutes acceptance of the updated policy." },
     ],
   },
   {
     title: "Contact",
     blocks: [
-      { type: "text", content: "For questions about this privacy policy, open an issue on the Feedbase GitHub repository or reach out on Discord." },
+      { type: "text", content: "For questions about this privacy policy, open an issue on the UserCue GitHub repository or reach out on Discord." },
     ],
   },
 ];
@@ -237,7 +237,7 @@ export default function PrivacyPage() {
           className="mb-6 p-4 rounded-2xl border border-primary/20 bg-primary/5"
         >
           <p className="text-sm text-foreground/80 leading-relaxed">
-            <span className="font-semibold text-foreground">Feedbase is self-hosted.</span>{" "}
+            <span className="font-semibold text-foreground">UserCue is self-hosted.</span>{" "}
             You run it on your own infrastructure — which means you own all your data. We don&apos;t have servers that store your users&apos; information.
           </p>
         </motion.div>
@@ -306,7 +306,7 @@ export default function PrivacyPage() {
           transition={{ duration: 0.4 }}
           className="mt-12 pt-8 border-t border-border flex items-center justify-between"
         >
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Feedbase. MIT licensed.</p>
+          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Paddlewheel Inc. UserCue is MIT licensed.</p>
           <Link
             href="/terms"
             className="text-xs text-muted-foreground hover:text-foreground transition-colors"

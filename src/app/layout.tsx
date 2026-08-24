@@ -17,17 +17,17 @@ const geistMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Feedbase",
+  title: "UserCue",
   description: "Make your feedback!",
   openGraph: {
-    title: 'Feedbase',
+    title: 'UserCue',
     description: 'Open source feedback management platform for product teams.',
     images: [
       {
         url: `${process.env.BETTER_AUTH_URL}/og.png`,
         width: 1291,
         height: 721,
-        alt: 'Feedbase',
+        alt: 'UserCue',
       },
     ],
   },
